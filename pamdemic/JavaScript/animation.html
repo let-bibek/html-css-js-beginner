@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <style>
+            @import url("css/bootstrap.css");
+
+        </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Animation</title>
+    </head>
+
+    <body>
+        <script>
+            // image  rotation
+            function rotate(){
+            var drawing;
+            var con;
+            var goofyPic;
+            var angle = 0;
+            CANV_HEIGHT = 400;
+            CANV_WIDTH = 400;
+            img_HEIGHT = 200;
+            img_WIDTH = 300;
+            init();
+            function init() {
+                drawing = document.getElementById("draw");
+                con = drawing.getContext("2d");
+                goofyPic = document.getElementById("ani");
+                setInterval(draw, 100);
+            } // end init
+            function draw() {
+                //clear background
+                con.fillStyle = "white";
+                con.fillRect(0, 0, CANV_HEIGHT, CANV_WIDTH);
+                //draw border
+                con.strokeStyle = "red";
+                con.lineWidth = "5";
+                con.strokeRect(0, 0, CANV_WIDTH, CANV_HEIGHT);
+                //change the rotation angle
+                angle += .25;
+                if (angle > Math.PI * 2) {
+                    angle = 0;
+                }
+                //start a new transformation system 
+                con.save();
+                con.translate(100, 100);
+                con.rotate(angle);
+                //draw the image
+                con.drawImage(goofyPic,
+                    img_WIDTH / -2, img_HEIGHT / -2,
+                    img_WIDTH, img_HEIGHT);
+                con.restore();
+            } // end draw
+        }
+        </script>
+        <img src="images.jpeg.jpg" alt="anime" id="ani" style="display: none;">
+        <canvas height="500px" width="500px" id="draw">
+            <p>Your browser doesn't support this feature.</p>
+        </canvas>
+        <canvas height="500px" width="500px" id="draw">
+            <p>Your browser doesn't support this feature.</p>
+        </canvas>
+        <input type="submit" value="Play a game" class=" badge-primary  rounded " style="outline: none;"  onclick="rotate()"></input>
+    </body>
+
+</html>

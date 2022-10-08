@@ -1,0 +1,234 @@
+ul
+{
+    display: grid;
+    column-gap: 1px;
+    grid-template-rows: 300px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    place-items: center;
+    margin: 2cm;
+    list-style-type: none;
+}
+#text
+{
+    display: grid;
+    gap: 5em;
+    background: white;
+    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+}
+input[type= "text"]
+{
+    border-radius: 1em;
+    border: none;
+    margin: 2em;
+    width: 13em;
+    height: 2em;
+}
+.text1
+{
+    position: relative;
+    top: -46.5%;
+    left: 5%;
+    background: white;
+    /* border-radius:  2em; */
+    box-sizing: content-box;
+    outline-color: transparent;
+}
+.text2
+{
+    border: none;
+}
+input[type="button"]
+{
+    width: 15em;
+    height: 2.8em;
+    margin: 2em;
+    background: white;
+    border: solid 0.11em orange;
+    border-radius: 1em;
+    outline-color: transparent;
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, .1);
+}
+
+#tran
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    text-align: center;
+    place-items: center;
+    width: 150px;
+    height: 300px;
+    margin-top: 5%;
+    /*margin-right: 50%;*/
+    background: crimson;
+    color: white;
+    transition: ease;
+   /* /*transform: rotate(45deg);
+    transform: translate(90px, 60px);*/
+    /*transform: scale(20, 20);*/
+    transition-property: background  border;
+    transition: width 5s, height 2s, transform 2s, background 2s, letter-spacing 2s,color 2s, border 5s, margin-top 1s;/* short hand transition proprty applied*/
+    /*transition-delay: 1s;*/
+    /*transition-duration: 2s, 2s, 1s;*/
+    position: relative;
+    cursor: pointer;
+    border-radius: 5px ;
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, .3);
+    
+}
+#tran:hover, #tran:focus
+{
+    transform: rotate(14deg) scale(1.2) /*translate(0px, -30px)*/;
+    background-color: skyblue;
+    border-radius: 10px ;
+    letter-spacing: 2px;
+    color: blueviolet;
+    
+   
+}
+#dran
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    text-align: center;
+    place-items: center;
+    width: 150px;
+    height: 300px;
+    margin-top: 5%;
+    /*margin-right: 50%;*/
+    background: crimson;
+    color: white;
+    transition: ease;
+   /* /*transform: rotate(45deg);
+    transform: translate(90px, 60px);*/
+    /*transform: scale(20, 20);*/
+    transition-property: background  border;
+    transition:  transform 3s, background 2s, letter-spacing 1s, color 2s, margin-top 1.5s;/* short hand transition proprty applied*/
+   /* transition-delay: 2s;*/
+    /*transition-duration: 2s, 2s, 1s;*/
+   /* transition: transform 0.3s ease;*/
+    /* position: relative; */
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, .4);
+    cursor: pointer;
+    border-radius: 10px;
+
+    /* the code to make a 3d block*/
+    /* transform: rotateX(-52deg) rotateY(5deg) rotateZ(0.5deg); */
+}
+#dran:hover, #dran:focus
+{
+    transform: rotate(0deg) scale(1.2) /*translate(0px, -30px)*/;
+    background-color: coral;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    letter-spacing: 2px;
+    color: skyblue;
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, .3);
+    
+   
+}
+#fran
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    text-align: center;
+    place-items: center;
+    width: 150px;
+    height: 300px;
+    margin-top: 5%;
+    /*margin-right: 50%;*/
+    background: crimson;
+    color: white;
+    transition: ease;
+   /* /*transform: rotate(45deg);
+    transform: translate(90px, 60px);*/
+    /*transform: scale(20, 20);*/
+    transition-property: background  border;
+    transition: width 2s, height 2s, transform 2s, background 2s, letter-spacing 2s,color 2s, border 5s, margin 2s;/* short hand transition proprty applied*/
+   /* transition-delay: 2s;*/
+    /*transition-duration: 2s, 2s, 1s;*/
+    position: relative;
+    cursor: pointer;
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, .3);
+}
+#fran:hover, #dran:focus
+{
+    transform: rotate(1440deg) scale(1.2) /*translate(0px, -30px)*/;
+    background-color: blueviolet;
+    border-radius: 50px;
+    letter-spacing: 2px;
+    color: coral;
+    
+   
+}
+/*p{
+    display: inline-flex;
+    background: blue;
+    
+    transition: transform 3s, letter-spacing 2s, color 2s ;
+    position: fixed;
+}
+p:hover, p:focus
+{
+    transform: rotate(360deg);
+    letter-spacing: 2px;
+    color: black;
+}*/
+.animation
+{
+    width: 5px;
+    height: 1%;
+    background: lightgreen;
+    position: relative;
+    animation-name: animation;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+@keyframes animation
+{
+     from
+    {
+        width: 0%;
+    }
+    to
+    {
+        width: 100%;
+    } 
+    /* 0%
+    {
+        width: 0px;
+        height: 0px;
+
+    }
+    10%
+    {
+        width: 10px;
+        height: 10px;
+
+    }
+    20%
+    {
+        width: 20px;
+        height: 20px;
+    }
+    75%
+    {
+        left: 0px;
+        right: 250px;
+    }
+    100%
+    {
+        left: 0px;
+        right: 0px;
+    } */
+}

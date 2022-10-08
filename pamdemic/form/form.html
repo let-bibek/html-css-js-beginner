@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head><title>form</title></head>
+    <body>
+        <form action="mailinglist.php" method="POST">
+            <fieldset>
+                <legend>A Simple Form</legend>
+                <input type="text" name="full name" id="first" placeholder="Enter your full name">
+                <p>
+                    <input type="checkbox" name="whatever" id="second">male
+                </p>
+                <p>
+                    <textarea name="comment" rows="4" cols="45" placeholder="Leave us a comment"></textarea>
+                </p>
+                <p>
+                    <input type ="submit" name="submit" id="third" placeholder="Done!">
+                </p>
+                <p>
+                    <input type="button" name="button" id="fourth">
+                </p>
+                <p>
+                    <input type="password" pattern="1415" variable="password">
+                </p>
+            </fieldset>
+        </form>
+        <li><label>Color:<input type="text" name="color" value="Pink" minlength="5"></label></li>
+        <li><label for="pass_wrd">Enter Password:</label><input type="password" name="pass"></li>
+        <p><input type="month" name="browse"></p>
+        <p>
+            Education completed: <input type="text" name="edu_text" list="edulavel">
+            <datalist id="edulavel">
+                <option value="School"></option>
+                <option  value="+2"></option>
+                <option value="Bachelor"></option>
+            </datalist>
+        </p>
+        <p>
+            <select name="ice_creams" size="3" multiple required>
+                <optgroup label="Traditional">
+                    <option>Vanilla</option>
+                    <option>Chocolate</option>
+                </optgroup>
+                <optgroup  label="Fancy">
+                    <option>Super praline</option>
+                    <option>Nut surprise</option>
+                    <option>Candy corn</option>
+                </optgroup>
+            </select>
+        </p>
+        <button><img src="Photoes/Photoes/thailand-3840x2160-hotel-ocean-beach-vacation-5k-4k-659.jpg" alt="thialand"></button>
+
+    </body>
+    <style>
+        form
+        {
+            font-style: italic;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</html>

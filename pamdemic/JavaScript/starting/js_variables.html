@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width= device-width, initial-scale= 1.0" />
+    <title>JS variables</title>
+    <!-- The style sheet goes here -->
+    <style>
+input
+{
+    margin: 1em;
+    box-shadow: 2px 2px 2px seashell;
+    outline: none;
+    /* outline-width: 3px; */
+    width: 7.5em;
+    height: 2em;
+transition:  ease, width 1s ;
+border: 2px solid transparent;
+background: wheat;
+border-radius: 1em;
+}
+#input_items_container
+{
+    display: grid;
+    gap: 1em;
+    grid-template: repeat(auto-fit, minmax(15em, 1fr));
+    position: relative;
+    /* width: 20em; */
+    /* height: 1fr; */
+    /* background: black; */
+    place-items: center;
+}
+fieldset
+{ 
+    display: flex;
+    flex-direction: column;
+    width: 17em;
+    /* align-content: center; */
+    /* justify-items: center; */
+    /* justify-items: center; */
+    align-items: center;
+    background: white;
+}
+fieldset:hover
+{
+    border: 1px solid red;
+}
+#username:focus, #passwrd:focus
+{
+    width: 15em ;
+}
+#username:hover, #passwrd:hover
+{
+    /* box-shadow: 3px 3px 3px gray; */
+    border: 2px solid rgb(6, 126, 201);
+    transform: scale(1.2);
+}
+#button
+{
+    transition: transform 2s , ease;
+    background: silver;
+    height: 2.5em;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+    border: silver;
+    color: whitesmoke;
+}
+#button:focus
+{
+    box-shadow: 3px 3px 3px gray;
+    transform: scale(0.9);
+    border: 2px solid red;
+    
+}
+#button:hover
+{
+    border: 2px solid rgb(0, 255, 76);
+}
+
+    </style>
+      </script> -->
+      <script src="js_variables.js"></script>
+  </head>
+  <body >
+    <p ondblclick= "myName()">I'm</p>
+    <form action="">
+
+ <div  id="input_items_container"><fieldset> <input type="text" name="usernme" id="username" placeholder="Enter username">
+  <input type="password" name="password" id="passwrd" placeholder="Enter password">
+    <input type="button" value="Confirm" id="button" onclick="get_input_from_user()"></fieldset</div>
+
+    </form>
+  </body>
+</html>

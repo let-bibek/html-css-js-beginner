@@ -1,0 +1,48 @@
+<html>
+    <head><title>FORM</title>
+        <meta name="viewport" content="width= device-width, initial-scale= 1.0">
+        <script language="javascript" type="text/javascript" src="string methods to manipulate text.js"></script>
+    </head>
+    <body>
+        <h1>This is an example of the form.</h1>
+        <div id="form">
+        <form>
+            <fieldset>
+                <legend>Survey Form</legend>
+                <label for="firstlast">Name:</label>
+                <input type="text" id="firstlast" placeholder="User's name"></input>
+            <input type="submit"  value="Check"  id="sub" onclick="main()"></input>
+            </fieldset>
+            
+        </form>
+    </div>
+    </body>
+    <style>
+        legend
+        {
+            position: relative;
+            font-family: sans-serif;
+        }
+        fieldset
+        {
+            border-style:inset;
+            border-color: chartreuse;
+        }
+        form
+        {
+            display: grid;
+            grid-template: repeat(auto-fit, minmax(15em, 1fr));
+            place-items: center;
+            width: auto;
+            border-radius: 2em;
+        }
+        #form
+        {
+            display: grid;
+            place-items: center;
+            grid-template: repeat(auto-fit, minmax(15em, 1fr));
+
+        }
+
+    </style>
+</html>

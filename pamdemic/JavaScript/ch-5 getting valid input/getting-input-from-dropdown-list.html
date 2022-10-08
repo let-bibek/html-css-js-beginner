@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <style>
+            @import url("css/bootstrap-grid.css");
+            @import url("css/bootstrap.css");
+            @import url("css/bootstrap-reboot.min.css");
+        </style>
+        <!-- <script src="js/bootstrap.min.js"></script> -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Getting input from drpdown list</title>
+        <script type="text/javascript">
+            // when the user clicks on the button the menu toggles out
+            function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+            // if the user clicks on other than the dropdown button the menu hides
+            window.onclick = function (e) {
+                if (!e.target.matches('.dropbtn')) {
+                    var myDropdown = document.getElementById("myDrodown");
+                    if (myDropdown.classList.contains('show')) {
+                        myDropdown.classList.remove('show');
+                    }
+                }
+            }
+            // handeling options
+            // from dropdownList.html
+            function changeColor() {
+                var selColor = document.getElementById("selColor");
+                var color = selColor.value;
+                document.body.style.backgroundColor = color;
+            } // end function
+            // handeling checkbox
+            //from checkBoxes.html
+            function order() {
+                //get variables
+                var chkPepperoni = document.getElementById("chkPepperoni");
+                var chkMushroom = document.getElementById("chkMushroom");
+                var chkSausage = document.getElementById("chkSausage");
+                var output = document.getElementById("output");
+                var result = "<ul> \n"
+                if (chkPepperoni.checked) {
+                    result += "<li>" + chkPepperoni.value + "</li> \n";
+                } // end if
+                if (chkMushroom.checked) {
+                    result += "<li>" + chkMushroom.value + "</li> \n";
+                } // end if
+                if (chkSausage.checked) {
+                    result += "<li>" + chkSausage.value + "</li> \n";
+                } // end if
+                result += "</ul> \n"
+                output.innerHTML = result;
+            } // end function
+            //  <!-- working with radio -->
+            // from radioGroup.html
+            function fight() {
+                var weapon = document.getElementsByName("weapon");
+                for (i = 0; i < weapon.length; i++) {
+                    currentWeapon = weapon[i];
+                    if (currentWeapon.checked) {
+                        var selectedWeapon = currentWeapon.value;
+                    } // end if
+                } // end for
+                var outputt = document.getElementById("outputt");
+                var response = "<h2>You defeated the dragon with a ";
+                response += selectedWeapon + "</h2> \n";
+                outputt.innerHTML = response;
+            } // end function
+            // handeling user inputs
+            // working with regular expressions
+            function validate() {
+                // get inputs
+
+                name = document.getElementById("txtName").value;
+                email = document.getElementById("txtEmail").value;
+                phone = document.getElementById("txtPhone").value;
+                if (name.length == 0) {
+                    alert("Please not leave name section empty.")
+                }
+                if (email.match(/b...k/)) {
+                    if (email.match(/@gmail.com$/)) {
+                        alert("Email matched.");
+                    }
+                } else {
+                    alert("Email didn't match");
+                }
+                if (phone.match(/\d\d\d-\d\d\d\d/)) {
+                    alert("IS " + phone + " your number?");
+                } else {
+                    alertt("You have entered a wrong number.")
+                }
+            }
+        </script>
+        <style>
+            body {
+                margin: 2em;
+            }
+
+            .dropdown-toggle {
+                width: fit-content;
+                height: auto;
+            }
+
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                z-index: 1;
+            }
+
+            .navbar {
+                position: relative;
+                min-width: 20em;
+                margin: 0 2.5em;
+            }
+
+            .dropdown-content a {
+                display: block;
+                float: none;
+                color: rgb(13, 144, 204);
+                padding: 12px 16px;
+                text-decoration: none;
+                text-align: left;
+
+            }
+
+            .dropdown-content a:hover {
+                background: #ddd;
+            }
+
+            .show {
+                display: block;
+            }
+
+            /* handeling options */
+
+            /* .dropdown{ */
+            /* float: left; */
+            /* overflow: hidden; */
+            /* } */
+            .dropbtn {
+                padding-right: 2em;
+            }
+
+            #myDropdown {
+                width: 2em;
+            }
+
+            /* handelling user inputs */
+            :required {
+                border: 1px solid red;
+            }
+
+            :invalid {
+                color: white;
+                background-color: rgb(206, 65, 65);
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class=" navbar navbar-toggler bg-dark">
+            <a href="#home" class="btn text-white ">Home</a>
+            <a href="#news" class="btn text-white btn-toolbar ">News</a>
+            <div class="dropdown">
+                <button class="dropdown-toggle btn text-white dropbtn " onclick="myFunction()">Dropdown
+                    <div class="bg-dark dropdown-content" id="myDropdown">
+                        <a href="#">link 1</a>
+                        <a href="#">link 2</a>
+                        <a href="#">link 3</a>
+                        <a href="#">link 4</a>
+                    </div>
+                </button>
+            </div>
+        </div>
+        <h3>Dropdown menu inside navigation bar</h3>
+        <p>Click on the "Dropdown" to see the dropdown lists.</p>
+        <div class=" navbar navbar-toggler ">
+            <select name="snf" id="jsjs" multiple="multiple" size="1"
+                class=" btn-toolbar jumbotron-fluid text-white bg-dark user-select-auto">
+                <option value="mojj">hsj</option>
+                <option value="klj">hjk</option>
+                <option value="ssd">dkj</option>
+                <option value="adsf">ffgh</option>
+            </select>
+            <button onclick="btn()">clickeeeeeerrrr</button>
+        </div>
+        <div class=" table jumbotron-fluid"><select id="selColor">
+                <option value="White">White</option>
+                <option value="red">Red</option>
+                <option value="orange">Orange</option>
+                <option value="yellow">Yellow</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+                <option value="coral">Coral</option>
+                <option value="skyblue">Skyblue</option>
+            </select>
+            <input type="button" value="change color" onclick="changeColor()" /></div>
+        <!-- handeling checkboxes -->
+        <div>
+            <h1>What do you want on your pizza?</h1>
+            <form action="">
+                <fieldset>
+                    <input type="checkbox" id="chkPepperoni" class="checked" value="pepperoni" />
+                    <label for="chkPepperoni">Pepperoni</label>
+                    <input type="checkbox" id="chkMushroom" value="mushrooms" />
+                    <label for="chkMushroom">Mushrooms</label>
+                    <input type="checkbox" id="chkSausage" value="sausage" />
+                    <label for="chkSausage">Sausage</label>
+                    <button type="button" onclick="order()">
+                        Order Pizza
+                    </button>
+                </fieldset>
+            </form>
+            <h2>Your order:</h2>
+            <div id="output">
+            </div>
+        </div>
+        <div>
+            <!-- working with radio -->
+            <h1>With what weapon will you fight the dragon?</h1>
+            <form action="">
+                <fieldset>
+                    <input type="radio" name="weapon" id="radSpoon" value="spoon" checked="checked" />
+                    <label for="radSpoon">Spoon</label>
+                    <input type="radio" name="weapon" id="radFlower" value="flower" />
+                    <label for="radFlower">Flower</label>
+                    <input type="radio" name="weapon" id="radNoodle" value="wet noodle" />
+                    <label for="radNoodle">Wet Noodle</label>
+                    <button type="button" onclick="fight()">
+                        fight the dragon
+                    </button>
+                </fieldset>
+                <div id="outputt">
+                </div>
+            </form>
+
+
+        </div>
+        <form action="">
+            <fieldset
+                style="margin: 1em; box-sizing: border-box; width: fit-content; display: grid; place-self: center;"
+                class=" jumbotron input-group d-lg-flex list-group-item-primary">
+                <label for="txtName">Enter your name</label> <input type="text" id="txtName">
+                <label for="txtEmail">Email</label> <input type="email" id="txtEmail">
+                <label for="txtPhone">Phone</label><input type="phone" id="txtPhone">
+                <input type="button" value="Click here" id="btn" onclick="validate()">
+            </fieldset>
+        </form>
+        <div class=" container-fluid">
+            <fieldset
+                style="margin: 1em; box-sizing: border-box; width: fit-content; display: grid; place-self: center;"
+                class=" jumbotron input-group d-lg-flex list-group-item-primary">
+                <label for="txName">Enter your name</label> <input type="text" id="txName" >
+                <label for="txEmail">Email</label> <input type="email" id="txEmail" required>
+                <label for="txsPhone">Phone</label><input type="phone" id="txsPhone" pattenrn = "\(\d{3}\) +\d{3}-\d{4}"
+                title = "(ddd) ddd-dddd" />
+                <input type="button" value="Click here" class=" btn-primary btn-outline-primary text-white" id="bntn"
+                    onclick="">
+            </fieldset>
+        </div>
+        
+    </body>
+
+</html>

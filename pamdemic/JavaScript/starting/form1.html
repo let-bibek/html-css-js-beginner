@@ -1,0 +1,66 @@
+<html>
+    <head><title>FORM</title>
+        <script src="basic_terminology.js"></script>
+    </head>
+    <body>
+        <h1>This is an example of the form.</h1>
+        <div id="form">
+        <form  action="" method="GET">
+            <fieldset>
+                <legend>Survey Form</legend>
+                <label for="firstlast">Name:</label>
+                <input type="text" name="full name" id="firstlast" placeholder="User's name"></input> <p>
+                <input type="submit" name="Submit"  id="sub" onclick="collector()"></input></p>
+            </fieldset>
+            
+        </form>     
+    </div>
+    </body>
+    <style>
+        form
+        {
+            display: grid;
+            position: relative;
+            grid-template-columns: repeat(auto-fit, minmax(100%,1fr));
+            justify-content: center;
+            place-items: center;
+            width: 100%;
+        }
+        legend
+        {
+            position: relative;
+            font-family: sans-serif;
+        }
+        fieldset
+        {
+            border-style:inset;
+            border-color: chartreuse;
+            width: auto;
+        }
+        p{
+            display: flex;
+            place-items: center;
+        }
+        #form
+        {
+            display: grid;
+            position: relative;
+            left, right: 5%;
+            height: auto;
+            background: cornflowerblue;
+            gap: 1%;
+            grid-template-columns: repeat(auto-fit, minmax(100%,1fr));
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #sub
+        {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #firstlast
+        {
+            border-block-color: blue;
+        }
+    </style>
+</html>

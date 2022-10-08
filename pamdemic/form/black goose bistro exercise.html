@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <title>Goose exercise</title>
+        <meta charset="cursive">
+    </head>
+    <body>
+        <form  action="http://blackgoosebistro.com/php" method="POST">
+            <fieldset>
+            <h1>Black Goose Bistro|Pizza-on-Demand</h1>
+            Our 12" wood-fired pizzas are available for delivery. Build your custom pizza and we'll deliver it within an hour.
+            Your information:
+            <p  id="name">
+                <label for="text">Name:</label> <input type="text" name="fullname" placeholder="Enter your full name">
+            </p>
+            <p>
+                <label for="text">Address:</label><input type="text" name="address">
+            </p>
+            <p>
+                <label for="email">Email: </label><input type="email" name="user's_email">
+            </p>
+            <p>
+                <label for="phone">Tel Number: </label> <input type="email">
+            </p>
+            <p>
+                <label for="textarea">Delivery instruction:</label>
+            </p>
+            <p>
+                <input type="textarea" name="user's instructions" maxlength="400" placeholder="No ,ore than 400 words.">
+            </p>
+            <p>
+                <h2>Design your dream Pizza:</h2>
+                Pizza Specs
+            </p>
+            <p>
+                Crust(Choose One):
+                <ol>
+                   <li><input type="radio" name="pizza" id="first">Classic White</li>
+                   <li><input type="radio" name="pizza" id="second">Multigrain</li>
+                   <li><input type="radio" name="pizza" id="third" checked>Cheese-stuffed crust</li>
+                   <li><input type="radio" name="pizza" id="fourth">Gluten-free</li>
+                </ol>
+            </p>
+            <p>
+                Toppings(Choose as many  as you want):
+                <ul>
+                    <li><input  type="checkbox" name="Red_sauce"  checked>Red sauce</li>
+                    <li><input  type="checkbox" name=" White_sauce"> White sauce</li>
+                    <li><input  type="checkbox" name=" Mozzarella cheese"> Mozzarella cheese</li>
+                    <li><input  type="checkbox" name="Pepperoni"> Pepperoni</li>
+                    <li><input  type="checkbox" name="Mushrooms"> Mushrooms</li>
+                    <li><input  type="checkbox" name="Peppers"> Peppers</li>
+                    <li><input  type="checkbox" name="Anchovies"> Anchovies</li>
+                </ul>
+            </p>
+            <p>
+                Numbers:
+              <br>  <select name="Pizz" size="2" multiple>
+                    <option value="one">1</option>
+                    <option value="2">2</option>
+                    <option value="3"selected>3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select></br>
+            </p>
+            <p>
+                <input  type="submit" name="Bring"  value="Yeah Bring me pizza">  <input type="reset">
+            </p>
+            <p><a href="#name">Go to fill the name section</a></p>
+            </fieldset>
+            <style>
+                fieldset
+                {
+                    background-color:khaki;
+                    background-blend-mode: screen;
+                    border-top-width: 1;
+                    border-bottom-width: 1;
+                    border-left-width: 0.7;
+                    border-right-width: 0.7;
+                    border-color:rgb(219, 6, 184);
+                    border-bottom-right-radius: 15;
+                    border-bottom-left-radius: 15;
+                    border-top-left-radius: 15;
+                    border-top-right-radius: 15;
+                    border-style:double;
+                }
+                body
+                {
+                    background-color: rgb(7, 161, 141);
+                
+                }
+            </style>
+        </form>
+    </body>
+</html>

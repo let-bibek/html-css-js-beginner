@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+    function bibek()
+    {
+        alert("Hey");
+        //create the bibek 
+    bibek = new Object();
+    bibek.name="Bibek";
+    bibek.surname= "Shrestha";
+    bibek.age= 19;
+    alert("My name is\n" + bibek.name);
+    //create the critter
+ //from addingMethods
+  asish = new Object();
+ //add some properties
+ asish.name = "Ashish";
+ asish.age = 9;
+ //create a method
+ asish.talk = function jhyap(){
+ msg = "Hi! My name is " + this.name;
+ msg += " and I'm " + this.age;
+ alert(msg);
+ } // end method
+ // call the talk method
+ asish.talk();
+    }
+    //building a constructor
+//from constructor.html
+function Critter(lName, lAge){
+ this.name = lName;
+ this.age = lAge; 
+ this.talk = function lyangLyang(){
+ msg = "Hi! My name is " + this.name;
+ msg += " and I'm " + this.age;
+ alert(msg);
+ } // end talk method
+} // end Critter class def
+function main(){
+ //build two critters
+ critterA = new Critter("Alpha", 1);
+ critterB= new Critter("Beta", 2);
+//  critterB.talk();
+//  the bellow code overrides the above code of critterB
+ critterB.name = "Charlie";
+// critterB.name = "chaka";
+ critterB.age = 3;
+//  critterB.name = 5;
+ //have 'em talk
+ critterA.talk();
+ critterB.talk();
+} // end main
+main();
+// introduction to JSON
+// Storing data in JSON format
+function myJSON()
+{
+    var myName={
+        "address":{ "Country":prompt("Your Country name??"), "Distric":prompt("Your distric name??"),"village":prompt("Your village name")},
+        "name" : { "first_name" : "Bibek" , "last_name" : "Shresthha"},
+        "age": { "years":19, "months":6, "days":18},
+        "program":{"faculty":"Computer","section":"A","roll":12}
+    };
+    alert("Welcome " +myName.name.first_name+" "+ myName.name.last_name +" of age "+myName.age.years+" Month/s "+myName.age.months+
+    " studying "+myName.program.faculty +" !! ");
+    alert(myName.address.village);
+}
+
+    </script>
+</head>
+<body>
+    <button id="bibek" onclick="bibek()">Click here</button>
+    <button id="bibek" onclick="myJSON()">Click here</button>
+</body>
+</html>

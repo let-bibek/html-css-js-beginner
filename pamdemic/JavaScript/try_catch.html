@@ -1,0 +1,136 @@
+<!-- <html> 
+<head> 
+<script type="text/javascript"> 
+var txt=""; 
+function message() 
+{ 
+try 
+ { 
+ adddlert("Welcome guest!"); 
+ } 
+catch(err) 
+ { 
+ txt="There was an error on this page.\n\n"; 
+ txt+="Error description: " + err.description + "\n\n"; 
+ txt+="Click OK to continue.\n\n"; 
+ alert(txt); 
+ } 
+} 
+</script> 
+</head> 
+<body> 
+<input type="button" value="View message" onclick="message()" /> 
+</body> 
+</html> -->
+
+<!-- Try catch example -->
+<!--<html> 
+<body> 
+<script type="text/javascript"> 
+var x=prompt("Enter a number between 0 and 10:",""); 
+try 
+ { 
+ if(x>10) 
+ { 
+ throw "Err1"; 
+ } 
+ else if(x<0) 
+ { 
+ throw "Err2"; 
+ } 
+ else if(isNaN(x)) 
+ { 
+ throw "Err3"; 
+ } 
+ } 
+catch(error) 
+ { 
+ if(error=="Err1") 
+ { 
+ alert("Error! The value is too high"); 
+ } 
+ if(error=="Err2") 
+ { 
+ alert("Error! The value is too low"); 
+ } 
+ if(error=="Err3") 
+ { 
+ alert("Error! The value is not a number"); 
+ } 
+ } 
+</script> 
+</body> 
+</html>-->
+
+<!-- form validation -->
+<!--<html> 
+<head> 
+<script type="text/javascript"> 
+function validate_email(field,alerttxt) 
+{ 
+with (field) 
+ { 
+ apos=value.indexOf("@"); 
+ dotpos=value.lastIndexOf("."); 
+ if (apos<1||dotpos-apos<2) 
+ {alert(alerttxt);return false;} 
+ else {return true;} 
+ } 
+} 
+function validate_form(thisform) 
+{ 
+with (thisform) 
+ { 
+ if (validate_email(email,"Not a valid e-mail address!")==false) 
+ {email.focus();return false;} 
+ } 
+} 
+</script> 
+</head> 
+<body> 
+<form action="submit.htm" onsubmit="return validate_form(this);" 
+method="post"> 
+Email: <input type="text" name="email" size="30"> 
+<input type="submit" value="Submit"> 
+</form> 
+</body> 
+</html>-->
+<!-- image mapping -->
+<!--<html> 
+<head> 
+<script type="text/javascript"> 
+function writeText(txt) 
+{ 
+document.getElementById("desc").innerHTML=txt; 
+} 
+</script> 
+</head> 
+<body> 
+<img src="images.jpeg.jpg" width="145" height="126" 
+alt="Planets" usemap="#planetmap" /> 
+<map name="planetmap"> 
+<area shape ="rect" coords ="0,0,82,126" onMouseOver="writeText('The Sun and the gas giant planets like Jupiter are by far the largest objects in our Solar System.')" href ="drawing on the canvas.html" target ="_blank" alt="Sun" /> 
+<area shape ="circle" coords ="90,58,3" onMouseOver="writeText('The planet Mercury is very difficult to study from the Earth because it is always so close to the Sun.')" href ="mercur.htm" target ="_blank" alt="Mercury" /> 
+<area shape ="circle" coords ="124,58,8" onMouseOver="writeText('Until the 1960s, Venus was often considered a twin sister to the Earth because Venus is the nearest planet to us, and because the two planets seem to share many characteristics.')" href ="venus.htm" target ="_blank" alt="Venus" /> 
+</map> 
+<p id="desc"></p> 
+</body> 
+</html>-->
+
+<!-- js timing events -->
+<html> 
+<head> 
+<script type="text/javascript"> 
+function timedMsg() 
+{ 
+var t=setTimeout("alert('5 seconds!')",5000); 
+} 
+</script> 
+</head> 
+<body> 
+<form> 
+<input type="button" value="Display timed alertbox!" 
+onClick="timedMsg()" /> 
+</form> 
+</body> 
+</html>

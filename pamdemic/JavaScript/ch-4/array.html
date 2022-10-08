@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <script type="text/javascript" src="array.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document_array</title>
+        <style>
+            @font-face {
+                font-family: myFont;
+                src: url("baby_cute/BABY\ CUTE.otf");
+            }
+
+            body {
+                background-color: #c4d0dc;
+            }
+
+            h5 {
+                text-align: center;
+                font-family: myFont;
+                letter-spacing: 1px;
+                font-size: 18px;
+                color: #e22d48;
+            }
+
+            .box_one {
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: auto;
+                border-radius: 4px;
+                width: 250px;
+                height: 50px;
+                outline: none;
+                border: none;
+                text-align: center;
+                background: linear-gradient(135deg, rgb(214, 228, 242), rgb(59, 59, 59, 25%));
+                box-shadow: 9px 8px 6px 0 rgb(209, 219, 234) inset, -8px -8px 12px 0 rgb(179, 185, 194) inset;
+                border-radius: 1em;
+                font-size: 16px;
+                position: relative;
+            }
+
+            .box1 {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+            }
+
+            .box_two {
+                text-align: center;
+                background: linear-gradient(135deg, rgb(214, 228, 242), rgb(59, 59, 59, 25%));
+                box-shadow: 9px 8px 6px 0 rgb(209, 219, 234) inset, -8px -8px 12px 0 rgb(179, 185, 194) inset;
+                 border-radius: 1em;
+                 outline: none;
+                 position: absolute;
+                 width: 5rem;
+                 height: 3em;
+                 margin-left:  -2.5em;
+                 margin-top: 0.5em;
+                 font-size: 16px;
+                 color: rgb(26, 20, 20);
+            }
+        </style>
+    </head>
+
+    <body>
+        <h5>(Soft UI) in User interface design</h5>
+
+        <h5>Bibek Shrestha</h5>
+        <div class="box1">
+            <input type="text" name="" class="box_one" placeholder="Enter your name"><span>
+            <input type="button" value="Submit" class="box_two" onclick="name_reader()">
+        </div>
+    </body>
+
+</html>

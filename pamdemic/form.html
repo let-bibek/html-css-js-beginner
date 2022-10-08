@@ -1,0 +1,27 @@
+<html>
+    <head><title>FORM</title></head>
+    <body>
+        <h1>This is an example of the form.</h1>
+        <form  action="/mailinglist.php" method="post">
+            <fieldset>
+                <legend>Survey Form</legend>
+                <label for="firstlast">Name:</label>
+                <input type="text" name="full name" id="firstlast" placeholder="User's name"></input>
+            <input type="submit" name="Submit"  id="sub"></input>
+            </fieldset>
+            
+        </form>
+    </body>
+    <style>
+        legend
+        {
+            position: relative;
+            font-family: sans-serif;
+        }
+        fieldset
+        {
+            border-style:inset;
+            border-color: chartreuse;
+        }
+    </style>
+</html>

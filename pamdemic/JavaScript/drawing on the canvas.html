@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <style>
+            @import url("css/bootstrap.css");
+        </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Beginning canvas</title>
+    </head>
+
+    <body>
+        <script type="text/javascript">
+            // RECTANGLE DRAWER
+            function draw() {
+                var drawing = document.getElementById("draw");
+                var con = drawing.getContext("2d");
+                con.fillStyle = "red";
+                con.strokeStyle = "green";
+                con.lineWidth = "3";
+                con.fillRect(10, 10, 180, 80);
+                con.strokeRect(10, 110, 180, 80);
+            }
+            //          TEXT DRAWER
+            function drawer() {
+                //from text.html
+                var drawing = document.getElementById("drawer");
+                var con = drawing.getContext("2d");
+                //clear background
+                con.fillStyle = "skyblue";
+                con.fillRect(5, 5, 200, 200);
+                // draw font in red
+                con.fillStyle = "red";
+                con.font = "20pt cursive";
+                con.fillText("I'm Bibek!", 33, 100);
+                con.strokeText("I'm Bibek!", 33, 130);
+            }
+            // SHADOW TO THE TEXT
+            function shadow() {
+                var shadow = document.getElementById("shadow");
+                var con = shadow.getContext("2d");
+                // setting background
+                con.fillStyle = prompt("Background??") //"coral";
+                con.fillRect(10, 10, 700, 450);
+                con.fillStyle = prompt("Enter your favourite color:\n") //"rgb(153, 0, 220)";
+                con.font = "22pt fantasy";
+                con.shadowColor = prompt("Shadow color??") //"black";
+                con.shadowOffsetX = 5;
+                con.shadowOffsetY = 3;
+                con.shadowBlur = prompt("Ennter the amount of shadow (1-8): \n");
+                var abc = con.fillText(prompt("Enter the text you want that to be appeared:\n"), 55, 160);
+
+            }
+            // creating objects using path
+            function path() {
+                //from pathDemo.html
+                var drawing = document.getElementById("polypath");
+                var con = drawing.getContext("2d");
+                // con.strokeStyle = "red";
+                // con.fillStyle = "blue";
+                // con.lineWidth = "5";
+                // con.beginPath();
+                // con.moveTo(100, 100);
+                // con.lineTo(100, 100);
+                // con.lineTo(360, 280);
+                // con.lineTo(360, 200);
+                // con.lineTo(100, 100);
+                // con.lineTo(120, 120);
+                // con.lineTo(140, 120);
+                // con.lineTo(140, 100);
+                // con.lineTo(120, 100);
+                // con.stroke();
+                // con.fill();
+                // con.closePath();
+                // con.fillStyle = "green";
+
+                //line
+                con.lineWidth = "10";
+                con.strokeStyle = "green";
+                con.lineCap = "square"; //butt//round
+                con.beginPath();
+                con.moveTo(10, 100);
+                con.lineTo(400, 100);
+                con.stroke();
+                con.closePath();
+
+
+                // con.fillStyle();
+                //change line width and color
+                /* con.strokeStyle = "red";
+                 con.lineWidth = 10;
+                 con.lineCap = "miter"//round//bevel
+                 con.beginPath();
+                 con.moveTo(10, 40);
+                 con.lineTo(20, 10);
+                 con.lineTo(30, 40);
+                 con.stroke();
+                 con.closePath();*/
+            } // end draw
+            // creat polypath
+
+            // Drawing arcs and circles
+            function tika() {
+                var arc = document.getElementById("create_arcs");
+                var con = arc.getContext("2d");
+                con.fillStyle = "red";
+                con.strokeStyle = "yellow";
+                con.lineWidth = "10";
+                con.beginPath();
+                //  half circle
+                con.arc(100, 75, 100, 0, Math.PI, false);
+                con.closePath();
+                con.stroke();
+                con.fill();
+                //  full circle
+                con.beginPath();
+                con.arc(200, 202, 50, 0, Math.PI * 2, true);
+                con.closePath();
+                con.stroke();
+                con.fill();
+                //from arcCirc.html
+            }
+            // quadratic curves
+            function qdrCrv() {
+                //from quad.html
+                drawing = document.getElementById("qdr_path");
+                con = drawing.getContext("2d");
+                con.fillStyle = "red";
+                con.strokeStyle = "black";
+                con.lineWidth = "5";
+                con.beginPath();
+                con.moveTo(50, 190);
+                con.quadraticCurveTo(100, 10, 250, 190);
+                con.stroke();
+                con.closePath();
+                //mark beginning and end with blue
+                drawDot(50, 190, "blue");
+                drawDot(250, 190, "blue");
+                //mark control points with red
+                drawDot(115, 100, "red");
+
+                function drawDot(x, y, color) {
+                    con.fillStyle = color;
+                    con.beginPath();
+                    con.arc(x, y, 10, 0, 5 * Math.PI, false);
+                    con.fill();
+                    con.closePath();
+                } // end drawDot
+            }
+            // image canvas
+            function image() {
+                //from image.html
+                var drawing = document.getElementById("image");
+                var con = drawing.getContext("2d");
+                var pic = document.getElementById("pic");
+                con.drawImage(pic, 0, 0, 50, 50);
+                var image2 = new Image();
+                image2.src = "images.jpeg.jpg";
+                con.drawImage(image2, 200, 100, 70, 50);
+            } // end draw
+        </script>
+        <div
+            style="display: grid; gap: 2em; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); overflow: auto;">
+            <canvas id="draw" width="400px" height="400px" class="badge-dark">
+                <p>Your browser doesn't support canvas.</p>
+            </canvas>
+            <canvas id="drawer" width="400px" height="400px" class="badge-info">
+                <p>Your browser doesn't support canvas.</p>
+            </canvas>
+            <canvas id="shadow" width="400px" height="400px" class="badge-pill">
+                <p>Your browser doesn't support canvas.</p>
+            </canvas>
+            <canvas id="polypath" width="400px" height="400px" class="badge-success">
+                <p>Your browser doesn't support canvas.</p>
+            </canvas>
+            <canvas id="create_arcs" width="400px" height="400px" class="badge-secondary">
+                <p>Your browser doesn't support canvas.</p>
+            </canvas>
+            <canvas id="qdr_path" width="400px" height="400px" class="badge-primary">
+                <p>Your browser doesn't support canvas.</p>
+            </canvas>
+            <!-- image in canvas -->
+            <img src="images.jpeg.jpg" id="pic" alt="incredible" class="hiddden" style="display: none;">
+            <canvas id="image" class=" bg-light" width="400px" height="400px" class="badge-primary">
+                <p>Your browser doesn't support canvas.</p>
+            </canvas>
+            <!--tree using canvas  -->
+            <canvas width="600" height="300" id="canva"></canvas>
+            <script>
+                let cx = document.getElementById("canva").getContext("2d");
+
+                function branch(length, angle, scale) {
+                    cx.fillRect(0, 0, 1, length);
+                    if (length < 8) return;
+                    cx.save();
+                    cx.translate(0, length);
+                    cx.rotate(-angle);
+                    branch(length * scale, angle, scale);
+                    cx.rotate(2 * angle);
+                    branch(length * scale, angle, scale);
+                    cx.restore();
+                }
+                cx.translate(300, 0);
+                branch(70, 0.5, 0.8);
+            </script>
+            <!-- pie-chart using canvas -->
+            <canvas width="200" height="200" id="canvas"></canvas>
+            <script>
+                let cx = document.getElementById("canvas").getContext("2d");
+                let total = results
+                    .reduce((sum, {
+                        count
+                    }) => sum + count, 0);
+                // Start at the top
+                let currentAngle = -0.5 * Math.PI;
+                for (let result of results) {
+                    let sliceAngle = (result.count / total) * 2 * Math.PI;
+                    cx.beginPath();
+                    // center=100,100, radius=100
+                    // from current angle, clockwise by slice's angle
+                    cx.arc(100, 100, 100,
+                        currentAngle, currentAngle + sliceAngle);
+                    currentAngle += sliceAngle;
+                    cx.lineTo(100, 100);
+                    cx.fillStyle = result.color;
+                    cx.fill();
+                }
+            </script>
+            <?xml version="1.0" encoding="utf-8"?>
+            <!-- svg -->
+            <svg version="1.1" B xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="400" height="400" viewBox="0 0 150 100">
+                <defs>
+                    <radialGradient id="fade">
+                        <stop offset="0" stop-color="white" />
+                        <stop offset="1" stop-color="orange" />
+                    </radialGradient>
+                </defs>
+                <g id="greenbox">
+                    <rect x="25" y="25" width="100" height="100" fill="#c6de89" stroke-width="2" stroke="green" />
+                    <circle cx="75" cy="75" r="40" fill="url(#fade)" />
+                    <path d="M 13 100 L 60 50 L 90 90 L 140 30" stroke="black" stroke-width="2" fill="none" />
+                </g>
+                <text x="25" y="150" fill="#000000" font-family="Helvetica" font-size="16">A Simple SVG</text>
+            </svg>
+        </div>
+        <button onclick="draw()" class="btn-lg btn-primary rounded-lg"
+            style="outline: none;font-family: sans-serif;">Draw rectangle</button>
+        <button onclick="drawer()" class="btn-lg btn-primary rounded-lg" style="outline: none;">Draw text</button>
+        <button onclick="shadow()" class="btn-lg btn-primary rounded-lg" style="outline: none;">Add shadow</button>
+        <button onclick="path()" class="btn-lg btn-primary rounded-lg" style="outline: none;">Creat polypath</button>
+        <button onclick="tika()" class="btn-lg btn-primary rounded-lg" style="outline: none;">Creat arcs</button>
+        <button onclick="qdrCrv()" class="btn-lg btn-primary rounded-lg" style="outline: none;">Quadratic Curve</button>
+        <button onclick="image()" class="btn-lg btn-primary rounded-lg" style="outline: none;">Show image
+            animation</button>
+    </body>
+
+</html>
