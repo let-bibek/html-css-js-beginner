@@ -1,0 +1,40 @@
+h1
+{
+    font-family: Mojo, Stencil, Impact, fantasy pink;
+   /* border: 1px solid blueviolet;*/
+    background-position-x: center;
+    background-position-y: center;
+    background-size: 10cm;
+    margin-left: 8em;
+    margin-top: 1em;
+    color: darkolivegreen;
+    
+}
+p
+{
+    font-size: 1.5em;
+    margin: 0.5em;
+    color: rgba(238, 57, 57, 0.904);
+    font-variant: small-caps;
+    font-stretch: ultra-expanded;
+}
+body
+{
+    background-color: darkseagreen;
+    border: crimson;
+    border-width: 5em;
+}
+bk
+{
+    color: rgb(4, 192, 67);
+    text-shadow: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 200%;
+    text-justify: distribute;
+    letter-spacing: initial;
+    font-stretch: narrower;
+    font-weight: 900;
+    font-style: italic;
+    /*background-color: rgba(154, 9, 238, 0.815);
+margin: 0.2em;*/
+}
