@@ -1,0 +1,55 @@
+a:link
+{
+    color:  maroon;
+}
+a:visited
+{
+    color: grey;
+}
+input:focus
+{
+    background-color: rgb(217, 184, 236);
+}
+a:hover
+{
+    background-color: palegoldenrod;
+}
+a:active
+{
+    color: red;
+    background-color: rgba(252, 13, 13, 0.37);
+}
+input:active
+{
+    background-color: rgb(12, 31, 1);
+
+}
+a
+{
+    text-decoration: none;
+}
+p{
+    color: rgb(233, 37, 168);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#p1::first-letter
+{
+    color: rgb(248, 21, 154);
+    font-size: 300%;
+}
+#p3::first-line
+{
+    letter-spacing: 9px;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}  
+p.warning::before
+{
+    content: "Hey you..";
+    color: purple;
+} 
+p.warning::after
+{
+    content: " Thank you for your attention.😘😍";
+    color: red;
+}

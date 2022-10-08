@@ -1,0 +1,83 @@
+img
+{
+   float: left;
+   width: 200px;
+   -webkit-shape-outside: url(PicsArt_07-18-11.19.43.png);
+   shape-outside: ellipse(1.8cm 5cm at 50% 35%);
+   shape-margin: 1.8em;
+}
+div.box
+{
+    font-size: 18px;
+    font-family: cursive;
+    margin-top: 1em;
+    height: auto;
+    width: 22cm;
+    border: 0.1mm none silver;
+    border-radius: 5mm;
+    background: rgb(6, 160, 221);
+    color: whitesmoke;
+    padding: 1em;
+    border-top-right-radius: 0mm;
+    position: sticky;
+}
+h2
+{
+    font-family: cursive;
+    clear: left;
+    margin-left: 1cm;
+    color: rgb(161, 9, 47);
+}
+div.boxer
+{
+    width: 12.3cm;
+    height: auto;
+    border: 0.1mm none silver;
+    border-radius: 0.2cm;
+    background: rgb(13, 207, 181);
+    float: right;
+    margin-top: -15.3cm;
+    color: rgb(243, 235, 235);
+    font-family: cursive;
+    font-size: 18px;
+    padding-left: 1em;
+    position: sticky;
+}
+#small
+{
+    float: right;
+    width: 4cm;
+    height: auto;
+    shape-margin: 1em;
+    font-size: 14.5px;
+    text-align: center;
+    color: rgb(119, 10, 28);
+    border-top: 1mm solid orange;
+    background: skyblue;
+    background-clip: content-box;
+   /* border-top-left-radius: 1cm;
+    border-bottom-left-radius: 1cm;*/
+    /*shape-outside: ellipse(1.2cm 1.5cm at 50% 50%);*/
+}
+em
+{
+    background: red;
+    position: absolute;
+    top: 2em;
+    left: 4em;
+}
+#temp
+{
+    background: url(orsrc57257.jpg);
+    height: 9cm;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    
+}
+#tika
+{
+    position: absolute;
+    left: 50%;
+    top: 95%;
+}

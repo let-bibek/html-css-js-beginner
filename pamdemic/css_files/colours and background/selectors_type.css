@@ -1,0 +1,61 @@
+#first
+{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 120%;
+    font-weight: bolder;
+    color: rgb(106, 8, 131);
+    text-decoration: wavy;
+    letter-spacing: 1mm;
+   /* text-shadow: 1mm .5mm 0.9mm rgb(233, 73, 10);*/
+    margin-top: 5mm;
+    text-align: center;
+}
+date 
+{
+    font-variant: small-caps;
+}
+p
+{
+    color: rgb(84, 158, 0);
+    text-align: center;
+    
+}
+body
+{
+   border-color: salmon;
+  border-bottom: 1mm;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(209, 184, 235);
+}
+
+#second
+{
+    font-size: medium;
+    text-align: center;
+    color: rgb(106, 8, 131);
+}
+#third
+{
+    font-size: small;
+    font-weight: bolder;
+    letter-spacing: 0.5mm;
+    margin-left: 2mm;
+    color: rgb(106, 8, 131);
+    text-decoration: underline;
+}
+
+    
+dd
+{
+    font-size: 13px;
+}
+#nego
+{
+    margin-left: 40mm;
+}
+#fourth
+{
+   /* list-style-image: url(WallpaperExpert/128416_original_4000x4000.jpg);*/
+   text-align: justify;
+   color: rgb(84, 158, 0);
+}

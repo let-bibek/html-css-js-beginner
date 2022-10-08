@@ -1,0 +1,17 @@
+body
+{/* linear gradient---the least efficient gradient
+    background-image: linear-gradient(to right, red, orange, pink, coral, skyblue, blue ,green, navy, chocolate, maroon);*/
+    /* radial gradient
+    background-image: radial-gradient(farthest-side at right bottom, red 30%, yellow 27%, purple);*/
+
+   /* background-image: repeating-linear-gradient(to bottom, white, silver 10px);*/
+  background-image: repeating-linear-gradient(45deg, orange, orange 12px, silver 13px);
+   background-attachment: fixed;
+}
+p
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    color: dimgray;
+
+}

@@ -1,0 +1,16 @@
+blockquote
+{
+    color: rgba(233, 12, 89, 0.959);
+    border:  2px dashed;
+    border-color: navy;
+    text-align: left;
+    background-color: rgba(0, 128, 38, 0.192);
+    background-clip: content-box;
+    padding: 5mm;
+    font-family: cursive;
+    border-bottom-left-radius: 2mm;
+    border-bottom-right-radius: 2mm;
+    border-top-left-radius: 1mm;
+    border-top-right-radius: 1mm;
+    /*opacity: 0.95;    /sets the transparancy to the element ..ranges from 0-1 */
+}

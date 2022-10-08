@@ -1,0 +1,142 @@
+#flex
+{
+    display: flex;
+    flex-direction: row;
+    color: rgb(212, 233, 192);
+    font-size: 40px;
+    width: 800px;
+    height: 8cm;
+    /*flex-wrap: wrap-reverse;*/
+    justify-content: space-between;
+    align-items: stretch;
+    border: 1mm solid peru;
+    flex-wrap: wrap-reverse;
+    background-color: cornsilk;
+
+}
+.flex
+{
+    width: 20%;
+    text-align: center;
+}
+.box1
+{
+    background: hotpink;
+    align-self: stretch;
+}
+.box2
+{
+    background: skyblue;
+    align-self: stretch;
+}
+.box3
+{
+    background: tomato;
+    align-self: stretch;
+    /*padding-top: 4.5cm ;*/
+    display: flex;
+    justify-content: center;
+}
+.box4
+{
+    background: black;
+    align-self: stretch;
+    size: 200px 300px;
+    display: flex;
+    /*flex-direction: row-reverse;*/
+
+}
+.box5
+{
+    background: rgb(7, 156, 94);
+    align-self: stretch;
+    overflow: auto;
+    font-size: 15px;
+    font-family: fantasy;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.box6
+{
+    background: rgb(17, 216, 93);
+    align-self: stretch;
+    /*padding-top: 2.5cm;*/
+    object-position: center;
+    align-self: center;
+}
+.box7
+{
+    background: rgb(162, 33, 248);
+    align-self: stretch;
+}
+.box8
+{
+    background: rgb(32, 9, 238);
+    align-self: stretch;
+}
+.box9
+{
+    background: rgb(129, 21, 201);
+    align-self: stretch;
+}
+.box10
+{
+    background: rgb(243, 7, 172);
+    align-self: stretch;
+}
+#hello
+{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+img
+{
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+#flex2
+{
+    display: flex;
+    flex-direction: row;
+    margin-right: auto;
+    width: 1000px;
+    align-items: center;
+    width: max-content;
+}
+ul
+{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    color: snow;
+    /*padding: 0.5em;
+    margin: 0;*/
+    background-color: rgb(34, 139, 113);
+    align-items: center;
+    width: inherit;
+    width: max-content;
+}
+ul.bo
+{
+    display: flex;
+    /*width: 2cm;*/
+   /* border: 1px;*/
+   justify-content: flex-end;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 1cm;
+    margin-left: auto;
+  /*  background-color: rgb(253, 253, 253);*/
+   border-radius: .5em;
+   margin: 0;
+   width: max-content;
+}
+li.logo
+{
+   display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}

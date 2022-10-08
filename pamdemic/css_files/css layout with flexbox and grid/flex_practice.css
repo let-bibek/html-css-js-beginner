@@ -1,0 +1,91 @@
+#flex
+{
+    border: thin solid coral;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+}
+.flex
+{
+    width: 20%;
+    margin: 0.3em;
+    flex-wrap: wrap;
+}
+.box1
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: chocolate;
+    flex: 0 1 108px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    color: rgb(255, 186, 10);
+    margin-right: 5em;
+    flex-wrap: wrap;
+}
+.box2
+{
+    display: flex;
+    flex-direction: column;
+    border: thin solid silver;
+    justify-content: center;
+    flex: 0 1 110px;
+    align-items: center;
+    text-align: center;
+    padding-right: 2em;
+}
+.box3
+{
+
+    display: flex;
+    flex-direction: column;
+    border: thin solid silver;
+    flex: 0 1 110px;
+    align-items: center;
+    text-align: center;
+    padding-right: 2em;
+}
+
+
+.box4
+{
+display: flex;
+flex-direction: column;
+border: thin solid silver;
+flex: 0 1 110px;
+align-items: center;
+text-align: center;
+padding-right: 2em;
+}
+.box5
+{
+display: flex;
+flex-direction: column;
+border: thin solid silver;
+flex: 0 1 110px;
+align-items: center;
+text-align: center;
+padding-right: 2em;
+}
+.box1
+{
+    margin-right: 13em;
+}
+.pox2
+{
+    font-weight: 700;
+    text-align: left;
+    font-size: 20px;
+    margin-top: 1em;
+}
+.pox3
+{
+    font-size: 17px;
+    font-family: fantasy;
+}
+.pox4
+{
+    background: yellow;
+}

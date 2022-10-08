@@ -1,0 +1,58 @@
+p.tiling
+{
+    padding: 2em;
+   /* border: 2px dashed;*/
+    background-color: rgb(223, 100, 28);
+    background-image: url(PicsArt_07-17-02.20.01.jpg);
+    color: rgb(184, 5, 65);
+    text-align: left;
+    font-size: 40px;
+    background-clip: content-box;
+    font-weight: bolder;
+    margin-left: 3mm;
+}
+header,footer
+{
+    text-transform: capitalize;
+    text-align: center;
+}
+header
+{
+    font-size: 26px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(197, 5, 69);
+    letter-spacing: 3mm;
+    background-position: 49.5% 4%;
+    background-repeat: no-repeat;
+    background-image: url(PicsArt_07-18-11.19.43.png);
+}
+section
+{
+    color: rgb(136, 100, 96);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body
+{
+    
+    background: url(PicsArt_07-18-02.42.102.png) left top no-repeat, url(PicsArt_07-18-02.432.59.png) center no-repeat, url(PicsArt_07-18-02.46.302.png) right bottom no-repeat;
+    background-color: papayawhip;
+   
+
+}
+footer
+{
+    color: rgb(131, 13, 72);
+    background-image: url(PicsArt_07-18-11.24.05.png);
+    background-repeat: no-repeat;
+    background-size: 300px 200px;
+    background-position: center;
+}
+p.add
+{
+    text-decoration: underline;
+    font-size: 20px;
+}
+h4
+{
+    text-decoration: underline
+}
