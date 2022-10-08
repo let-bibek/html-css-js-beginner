@@ -1,0 +1,15 @@
+@media screen and (orientation: landscape)
+
+{
+p
+{
+    background-color: skyblue;
+}
+}
+@media screen and (orientation: portrait)
+{
+    p
+    {
+        background: coral;
+    }
+}

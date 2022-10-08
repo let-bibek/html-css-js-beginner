@@ -1,0 +1,27 @@
+.smooth
+{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 1em 2em;
+    border-radius: 1.5em;
+    width: 10em;
+    background: mediumblue;
+    color: red;
+    transition-property: color, background-color, letter-spacing, font-family;
+   /* transition-property: background-color;*/
+    transition-duration: 0.1s, 0.1s, 0.1s,0.3s;
+    transition-timing-function: linear;
+    transition-delay: 0.1s;
+    /*transition: background-color 0.2s linear 0.1s;*/
+}
+.smooth:hover, .smooth:focus
+{
+    color:#fff;
+    background-color: red;
+    text-decoration: overline;
+    letter-spacing: 3px;
+    /*font-family: cursive;
+    cursor: pointer;*/
+    /*font-size: 20px;*/
+}

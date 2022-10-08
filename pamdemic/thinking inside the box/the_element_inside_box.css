@@ -1,0 +1,18 @@
+p
+{
+    background: coral;
+    width: 7cm;
+    height: 5cm;
+    border: thin solid grey;
+    margin-top: 5cm;
+    margin-left: 15cm;
+    margin-right: auto;
+    margin-bottom: auto;
+    padding: 0.5cm  1cm 1cm 1cm;
+    box-sizing: content-box;
+    overflow: hidden;
+    text-align: left;
+    border-radius: 2cm 1cm 2cm 1cm;
+    font-family: fantasy;
+    font-size: 20px;
+}

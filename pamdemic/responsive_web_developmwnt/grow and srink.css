@@ -1,0 +1,94 @@
+#ul1
+{
+    display: flex;
+    flex-direction: row;
+    width: 700px;
+    justify-content: space-between;
+    border: thin solid coral;
+    list-style-type: none;
+    flex-wrap: wrap;
+    height: 150px;
+}
+.ul01
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: skyblue;
+    flex: 1 0;
+    align-items: center;
+}
+.ul02
+{
+    background: slateblue;
+    flex: 0 1 150px;
+}
+.ul03
+{
+    background: teal;
+}
+.ul04
+{
+    background: tomato;
+}
+.ul05
+{
+    background: yellowgreen;
+}
+.B
+{
+    top: auto;
+    left: auto;
+    color: rgb(46, 95, 0);
+}
+.flex
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 auto;
+}
+/*Flex order*/
+main
+{
+    display: flex;
+    background: rgb(37, 84, 99);
+    font-family: fantasy;
+    height: inherit;
+    font-weight: 600;
+    color: rgb(36, 53, 1);
+    font-size: 16px;
+    text-align: center;
+}
+article
+{
+    flex: 1 1 50%;
+    background: white;
+    order: 0;
+    align-self: center;
+    text-align: center;
+}
+#news
+{
+    flex: 0 1 25%;
+    background: skyblue;
+    order: -1;
+}
+#contact
+{
+    flex: 0 1 25%;
+    background: coral;
+    order: 1;
+}
+nav
+{
+    background: lightseagreen;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1{
+    color: white;
+    font-size: 20px;
+    height: 2%;
+}

@@ -1,0 +1,73 @@
+small
+{
+    /* display: grid;
+    justify-content: center; */
+    
+    position: relative;
+    color: darkblue;
+    
+}
+form{
+margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    max-width: 25em;
+    width: 40%;
+    box-sizing: border-box;
+}
+label
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+#text
+{
+    background: url("default-skin.png");
+    width: 5em;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* animation-name: text;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-duration: 1s; */
+    transition: transform 5s, ease, width 2s ;
+}
+  #text:focus
+{ 
+    width: 15em ;
+}
+
+/* @keyframes text
+{
+    form
+    {
+        width: 20%
+    }
+    to
+    {
+        width: 100%
+    }
+} */
+fieldset
+{
+    background: lightyellow;
+
+}
+legend
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+#email
+{
+    width: 5em;
+    transition: transform 5s, ease, width 1s ;
+}
+#email:focus
+{
+    width: 15em ;
+}
+input
+{
+    
+}
