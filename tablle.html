@@ -1,0 +1,68 @@
+<html>
+		<head><title>Table example</title></head>
+		<body style="background-image:url('IMG_8407.jpg')">
+			<form>
+				<fieldset>
+					<legend><h2>Form for students</h2></legend><a id="name"></a>
+				<fieldset>
+					<legend>Name Section</legend>
+                    <input type="text" name="name" placeholder="first name"><p>
+				<input type="text" name="name" placeholder="Last Name">
+				</fieldset>
+				<fieldset>
+					<legend>Acadamic Section</legend>
+				<input type="Class" name ="Class" placeholder="class"><p>
+				<input type ="number" name="Roll" placeholder="Roll No." range="1-50">
+			</fieldset>
+			<fieldset>
+				<legend>Other Information</legend><p>
+				Sex:Girl<input value ="Girl" type="radio" name="Sex">  Boy<input type="radio" name="Sex" value="boy"selected><p>
+			Village Name:<select name="Village Name" value="Village Name">
+				<option value="Ph"selected>Phyakse</option>
+				<option value="sh">Shyaldada</option>
+				<option value="pm">Pimalkhola</option>
+				<option value="Jo">Jogidada</option>
+				<option value="Dr">Deurali</option>
+			</select><p>
+				<h1 id="email"></h1>Email:<input type="email" name="E"><p>
+				Password:<input type="password" name="password"><p>
+				<input type="checkbox" name="chk">I agree all terms.
+				<input type="submit" name="submit" value="submit"><p>
+				<input type="reset" name="reset">
+		    </fieldset>
+			</fieldset>
+			</form>
+		</body>
+			<table>
+				<caption><h2>Data of students</h2></caption>
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Roll</th>
+						<th>Class</th>
+						<th>Percentage</th>
+					</tr>
+					<tr>
+						<td>Sushil</td>
+						<td>1</td>
+						<td>9</td>
+						<td>90%</td>
+					</tr>
+					<tr>
+						<td>Aashish</td>
+						<td>1</td>
+						<td>5</td>
+						<td>85%</td>
+					</tr>
+					<tr>
+						<td>Bibek</td>
+						<td>12</td>
+						<td>B.E.Computer-2 <sup>nd</sup> year</td>
+						<td>A</td>
+					</tr>
+				</thead>
+			</table>
+            <h3><a href="#email">Jump to email</a></h3>
+            <a href="#name">Jump to name section</a>
+    
+</html>
